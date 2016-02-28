@@ -13,7 +13,7 @@ module.exports = {
     'jquery': 'jQuery'
   },
   resolve: {
-    extensions: ['', '.js', '.scss', '.sass']
+    extensions: ['', '.js']
   },
   plugins: [
     new webpack.DefinePlugin({
@@ -39,11 +39,6 @@ module.exports = {
         test: /\.js(x?)$/,
         exclude: /node_modules/,
         loader: 'eslint'
-      },
-      {
-        test: /\.(scss|sass)$/,
-        exclude: /node_modules/,
-        loader: 'sass-variables'
       }
     ]
   },

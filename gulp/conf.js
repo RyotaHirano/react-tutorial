@@ -9,18 +9,6 @@ export const DIR = {
 
 export const isProduction = process.env.NODE_ENV === 'production';
 
-export const AUTOPREFIXER = [
-  'ie >= 9',
-  'ie_mob >= 10',
-  'ff >= 30',
-  'chrome >= 34',
-  'safari >= 7',
-  'opera >= 23',
-  'ios >= 7',
-  'android >= 4.1',
-  'bb >= 7'
-];
-
 export const jade = {
   src: [
     `${DIR.SRC}/**/*.jade`,
